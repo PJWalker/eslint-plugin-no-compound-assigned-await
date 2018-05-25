@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-no-compound-assigned-await",
+  "version": "0.0.1",
+  "description": "`x += await y` means `x = x + await y`. The value of x is 'fixed' synchonously, and y is later added to it. This is hard to discern when reading the code, and generally unwanted.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "PJ Walker",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
